@@ -1,0 +1,39 @@
+<link rel="stylesheet" href="assets/css/blog.css">
+
+<body class="blue-grey lighten-5 animated fadeInDown">
+	<div class="container">
+		<h5>blog</h5>
+		<h6>there is no darkness but ignorance</h6>
+		<h6>-shakespeare</h6>
+		<hr>
+		<div class="row">
+			<div class="col-lg-12">
+				{{#each post}}
+				<div class="post">
+					<h5 class="post-title">
+						<a href=" {{ this.url }}"> {{ this.title }}</a>
+					</h5>
+					<p class="post-date">{{ this.date}} by  {{ this.author }}</p>
+					{{ this.excerpt }}
+					<br>
+					<p>
+						<a href=" {{ this.url }} "> Read More...</a>
+					</p>
+				</div>
+				{{/each}}
+			</div>
+		</div>
+
+
+		<a class="btn-floating btn-large waves-effect waves-light black " href="/">
+			<i class="material-icons">keyboard_arrow_down
+			</i>
+		</a>
+		<div <!--Import jquery-->
+			<script type="text/javascript" src="vendor/js/jquery-3.2.1.min.js"></script>
+
+			<!--Import materialize-->
+			<script type="text/javascript" src="vendor/js/materialize.min.js"></script>
+			<!--Import custom-->
+			<script type="text/javascript" src="assets/js/index.js"></script>
+</body>

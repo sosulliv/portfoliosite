@@ -1,9 +1,10 @@
 import express from 'express';
-//import fs from 'fs';
-//import path from 'path';
 import open from 'open';
 import bodyParser from 'body-parser';
 import exphbs from 'express-handlebars';
+import contact_router from './controllers/contact_controller.js';
+import blog_router from './controllers/blog_controller.js';
+
 
 
 
@@ -21,22 +22,34 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');
 
-
+//express config
+app.use(express.static(process.cwd() + '/public'));
 
 app.get('/', function (req, res) {
 	res.render('index');
 });
 
+//app.get('/blog', function (req, res) {
+	//console.log(req);
+	//res.render('blog');
+//});
 
-
-app.get('/users', function (req, res) {
-	// Hard coding for simplicity. Pretend this hits a real database
-	res.json([
-		{ "id": 1, "firstName": "Bob", "lastName": "Smith", "email": "bob@gmail.com" },
-		{ "id": 2, "firstName": "Tammy", "lastName": "Norton", "email": "tnorton@yahoo.com" },
-		{ "id": 3, "firstName": "Tina", "lastName": "Lee", "email": "lee.tina@hotmail.com" }
-	]);
+app.get('/projects', function (req, res) {
+	res.render('projects');
 });
+
+app.get('/contact', function (req, res) {
+	res.render('contact');
+});
+
+app.get('/about', function (req, res) {
+	res.render('about');
+});
+
+//router
+app.use('/', contact_router);
+app.use('/', blog_router);
+
 
 app.listen(port, function (err) {
 	if (err) { console.log(err); }

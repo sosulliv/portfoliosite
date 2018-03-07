@@ -1,0 +1,254 @@
+
+
+ #lettering_div {
+
+	margin-top: 20em;
+
+ }
+
+
+.navItem {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	display: block;
+	cursor: pointer;
+	z-index: 100;
+}
+
+.navItem span.text {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	display: block;
+	font-size: 20px;
+	font-weight: 900;
+	color: #3c3c3e;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 15px;
+}
+
+@media (min-width: 480px) {
+	.navItem span.text {
+		font-size: 15px;
+	}
+}
+
+@media (min-width: 768px) {
+	.navItem span.text {
+		font-size: 17px;
+	}
+}
+
+@media (min-width: 992px) {
+	.navItem span.text {
+		font-size: 20px;
+	}
+}
+
+@media (min-width: 1025px) {
+	.navItem span.text {
+		font-size: 20px;
+	}
+}
+
+.navItem span.text .char {
+	letter-spacing: 0px;
+	width: 22px;
+	display: inline-block;
+}
+
+@media (min-width: 480px) {
+	.navItem span.text .char {
+		width: 22px;
+	}
+}
+
+@media (min-width: 768px) {
+	.navItem span.text .char {
+		width: 26px;
+	}
+}
+
+@media (min-width: 992px) {
+	.navItem span.text .char {
+		width: 30px;
+	}
+}
+
+@media (min-width: 1025px) {
+	.navItem span.text .char {
+		width: 30px;
+	}
+}
+
+.navItem.navItemBlog {
+	width: 100%;
+	height: 62px;
+}
+
+@media (min-width: 480px) {
+	.navItem.navItemBlog {
+		height: 62px;
+	}
+}
+
+@media (min-width: 768px) {
+	.navItem.navItemBlog {
+		height: 62px;
+	}
+}
+
+@media (min-width: 992px) {
+	.navItem.navItemBlog {
+		height: 114px;
+	}
+}
+
+@media (min-width: 1025px) {
+	.navItem.navItemBlog {
+		height: 114px;
+	}
+}
+
+.navItem.navItemBlog span.text {
+	width: 100%;
+}
+
+.navItem.navItemContact {
+	right: 0px;
+	left: auto;
+	height: 100%;
+	width: 62px important!;
+}
+
+@media (min-width: 480px) {
+	.navItem.navItemContact {
+		width: 62px;
+	}
+}
+
+@media (min-width: 768px) {
+	.navItem.navItemContact {
+		width: 62px;
+	}
+}
+
+@media (min-width: 992px) {
+	.navItem.navItemContact {
+		width: 114px;
+	}
+}
+
+@media (min-width: 1025px) {
+	.navItem.navItemContact {
+		width: 114px;
+	}
+}
+
+.navItem.navItemContact span.text {
+	top: auto;
+	left: auto;
+	bottom: 50%;
+	right: 50%;
+	text-align: center;
+	-webkit-transform: translate(50%, 50%) rotate(-90deg);
+	-moz-transform: translate(50%, 50%) rotate(-90deg);
+	-ms-transform: translate(50%, 50%) rotate(-90deg);
+	-o-transform: translate(50%, 50%) rotate(-90deg);
+	transform: translate(50%, 50%) rotate(-90deg);
+	-ms-transform-origin: center;
+	-webkit-transform-origin: center;
+	-moz-transform-origin: center;
+	transform-origin: center;
+}
+
+.navItem.navItemProjects {
+	bottom: 0px;
+	top: auto;
+	width: 100%;
+	height: 62px;
+}
+
+@media (min-width: 480px) {
+	.navItem.navItemProjects {
+		height: 62px;
+	}
+}
+
+@media (min-width: 768px) {
+	.navItem.navItemProjects {
+		height: 62px;
+	}
+}
+
+@media (min-width: 992px) {
+	.navItem.navItemProjects {
+		height: 114px;
+	}
+}
+
+@media (min-width: 1025px) {
+	.navItem.navItemProjects {
+		height: 114px;
+	}
+}
+
+.navItem.navItemProjects span.text {
+	width: 100%;
+}
+
+.navItem.navItemAbout {
+	bottom: 0px;
+	top: auto;
+	height: 100%;
+	width: 62px;
+}
+
+@media (min-width: 480px) {
+	.navItem.navItemAbout {
+		width: 62px;
+	}
+}
+
+@media (min-width: 768px) {
+	.navItem.navItemAbout {
+		width: 62px;
+	}
+}
+
+@media (min-width: 992px) {
+	.navItem.navItemAbout {
+		width: 114px;
+	}
+}
+
+@media (min-width: 1025px) {
+	.navItem.navItemAbout {
+		width: 114px;
+	}
+}
+
+.navItem.navItemAbout .text {
+	/*width: 100vh; */
+	top: 50%;
+	left: 50%;
+	text-align: center;
+	-webkit-transform: translate(-50%, -50%) rotate(90deg);
+	-moz-transform: translate(-50%, -50%) rotate(90deg);
+	-ms-transform: translate(-50%, -50%) rotate(90deg);
+	-o-transform: translate(-50%, -50%) rotate(90deg);
+	transform: translate(-50%, -50%) rotate(90deg);
+	-ms-transform-origin: center;
+	-webkit-transform-origin: center;
+	-moz-transform-origin: center;
+	transform-origin: center;
+}
+
+
