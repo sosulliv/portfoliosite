@@ -31,4 +31,4 @@ go to http://localhost3006 on Chrome
 - [ ] React
 
 
-_This project was built originally by [Sean O'Sullivan](@sosulliv) and added functionality will be rolled out in conjuction with [Frank Hernandez](@fhern077)_
+_This project was built originally by [Sean O'Sullivan](https://github.com/sosulliv/) and added functionality will be rolled out in conjuction with [Frank Hernandez](https://github.com/fhern077)_

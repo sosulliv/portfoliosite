@@ -1,17 +1,22 @@
-import secret_sauce from  '../config/secret_sauce.json';
-import Sequelize from 'sequelize';
-const sequelize = new Sequelize('mysql://root:'+secret_sauce.crazy+'@localhost:3306/portfolio_db');
+module.exports = (sequelize, DataTypes)=>{
 
-
-const contact_model= sequelize.define('contact_message', {
-	first_name: Sequelize.STRING,
-	last_name: Sequelize.STRING,
-	email: Sequelize.STRING,
-	message: Sequelize.STRING
-
+let contact_message= sequelize.define('contact_message', {
+	first_name: {
+		type: DataTypes.STRING
+	},
+	last_name:  {
+		type: DataTypes.STRING
+	},
+	email:  {
+		type: DataTypes.STRING,
+		validate:{
+			isEmail: true
+		}
+	},
+	message:  {
+		type: DataTypes.STRING
+	}
 });
 
-//burger.sync();
-
-
-export default contact_model;
+return contact_message;
+}
