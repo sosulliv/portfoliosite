@@ -17,7 +17,7 @@ git clone
 npm install 
 # go to config/config.json and edit the development json to be able to run 
 npm start 
-go to http://localhost3006 on Chrome
+go to http://localhost:3006 on Chrome
 ```
 
 ## Future Development
