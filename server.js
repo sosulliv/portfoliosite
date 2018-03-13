@@ -44,6 +44,6 @@ db.sequelize.sync().then(() => {
 			if(ENV==='development'){
 				open(`http:localhost:${PORT}/`)
 			}
-		};	
+		}	
 	});
 });
