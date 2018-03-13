@@ -8,7 +8,8 @@
 		"open:src": "babel-node server.js",
 		"lint": "esw",
 		"lint:watch": "npm run lint -- --watch",
-		"security-check": "nsp check"
+		"security-check": "nsp check",
+		"test": "npm-run-all --parallel open:src "
 	},
 	"author": "Sean O'Sullivan",
 	"license": "MIT",

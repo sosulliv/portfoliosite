@@ -3,11 +3,12 @@
 		<h5>contact</h5>
 		<h6>the universe is full of doors</h6>
 		<h6>-herbert</h6>
+
 		<hr>
 		<div class="row">
 			<div class="col s12 m6 l6">
 				<div class="row">
-					<form action="message/create" method="POST" class="col s12">
+					<form class="col s12">
 						<div class="row">
 							<div class="input-field col s6">
 								<input id="first_name" type="text" name="first_name" class="validate">
@@ -24,7 +25,7 @@
 								<label for="email">E-Mail</label>
 							</div>
 						</div>
-						<textarea class="materialize-textarea" name="message" placeholder="Your Message" required></textarea>
+						<textarea id="message" class="materialize-textarea" name="message" placeholder="Your Message" required></textarea>
 						<button class="btn waves-effect waves-light" type="submit" name="action">Submit
 							<i class="mdi-content-send right"></i>
 						</button>
@@ -64,7 +65,6 @@
 	</div>
 
 
-
 	<!--Import jquery-->
 	<script type="text/javascript" src="vendor/js/jquery-3.2.1.min.js"></script>
 
@@ -72,4 +72,27 @@
 	<script type="text/javascript" src="vendor/js/materialize.min.js"></script>
 	<!--Import custom-->
 	<script type="text/javascript" src="assets/js/index.js"></script>
+	<script>
+		$("form").submit(function (event) {
+			event.preventDefault();
+
+			var messageObj = {
+				fname:	$("#first_name").val(),
+				lname:	$("#last_name").val(),
+				email:	$("#email").val(),
+				message: $("#message").val()
+			};
+
+			$.post("/api/message/create", messageObj, function(data) {
+				if(data=='ok'){
+					 M.toast({html: 'Message Has Been Sent & Received!', classes: 'green rounded'});
+					 $("form").trigger('reset');
+				}
+			});
+
+
+
+		});
+	</script>
+
 </body>

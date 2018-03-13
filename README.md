@@ -17,7 +17,7 @@ git clone
 npm install 
 # go to config/config.json and edit the development json to be able to run 
 npm start 
-go to http://localhost3006 on Chrome
+go to http://localhost:3006 on Chrome
 ```
 
 ## Future Development
@@ -31,4 +31,4 @@ go to http://localhost3006 on Chrome
 - [ ] React
 
 
-_This project was built originally by [Sean O'Sullivan](@sosulliv) and added functionality will be rolled out in conjuction with [Frank Hernandez](@fhern077)_
+_This project was built originally by [Sean O'Sullivan](https://github.com/sosulliv/) and added functionality will be rolled out in conjuction with [Frank Hernandez](https://github.com/fhern077)_
