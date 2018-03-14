@@ -16,7 +16,7 @@ module.exports = {
 		return helpers.recent().then((data) => {
 				res.render('blog', data);
 			});
-			
+
 	}
 };
 
