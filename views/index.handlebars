@@ -1,30 +1,32 @@
 <link rel="stylesheet" href="assets/css/index.css">
 
-<body class="animated flipInX">
-	<div id="particles-js">
+
+<body>
+	<div id="particles-js" class="blue-grey lighten-5">
 		<div class="btext">
-			<h1>I'm
-				<span class="txt-rotate  " data-period="1200" data-rotate='["Sean.", " a Developer.", " an Innovator." , "a Student"]'></span>
+			<h1 class="black-text">I'm
+				<span class="txt-rotate black-text" data-period="2000" data-rotate='["Sean.", " a Builder.", " an Innovator." ]'></span>
+
 			</h1>
 		</div>
 	</div>
 
 
-	<a class="navItem navItemBlog black-text  transition" id="blog-link" href="/blog" rel="blog">
+	<a class="navItem navItemBlog black-text" id="blog-link" href="/blog" rel="blog">
 		<span class="text">Blog</span>
 	</a>
-	<a class="navItem navItemContact black-text" id="contact-link" data-animation="37" href="/contact" rel="Contact">
+	<a class="navItem navItemContact black-text" id="contact-link"  href="/contact" rel="Contact">
 		<span class="text">Contact</span>
 	</a>
-	<a class="navItem navItemProjects black-text" id="project-link" data-animation="3" href="/projects" rel="Projects">
+	<a class="navItem navItemProjects black-text" id="project-link"  href="/projects" rel="Projects">
 		<span class="text">Projects</span>
 	</a>
-	<a class="navItem navItemAbout black-text" id="about-link" data-animation="4" href="/about" rel="About">
+	<a class="navItem navItemAbout black-text" id="about-link" href="/about" rel="About">
 		<span class="text">About</span>
 	</a>
 
 
-	<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script type="text/javascript" src="vendor/js/particles.min.js"></script>
 
 	<script>
 		particlesJS.load('particles-js', 'particles.json',
@@ -38,8 +40,7 @@
 <script type="text/javascript" src="vendor/js/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="vendor/js/materialize.min.js"></script>
 
-<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-
+<script type="text/javascript" src="vendor/js/particles.min.js"></script>
 <script>
 	particlesJS.load('particles-js', "assets/files/particles.json", function () {
 		console.log('particles.json loaded...');
@@ -47,29 +48,31 @@
 
 
 	$("#blog-link").hover(function () {
-		$(this).addClass('animated jello');
+
+		$(this).addClass('animated flipInX');
 	});
 	$("#blog-link").bind("animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd", function () {
-		$(this).removeClass('animated jello');
+		$(this).removeClass('animated flipInX');
 	});
 
 	$("#contact-link").hover(function () {
-		$(this).addClass('animated jello');
+		$(this).addClass('animated flipInY');
 	});
 	$("#contact-link").bind("animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd", function () {
-		$(this).removeClass('animated jello');
+		$(this).removeClass('animated flipInY');
 	});
 	$("#about-link").hover(function () {
-		$(this).addClass('animated jello');
+		$(this).addClass('animated flipInY');
 	});
 	$("#about-link").bind("animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd", function () {
-		$(this).removeClass('animated jello');
+		$(this).removeClass('animated flipInY');
 	});
 	$("#project-link").hover(function () {
-		$(this).addClass('animated jello');
+		$(this).addClass('animated flipInX');
 	});
 	$("#project-link").bind("animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd", function () {
-		$(this).removeClass('animated jello');
+		$(this).removeClass('animated flipInX');
+
 	});
 </script>
 <!--Import custom-->
